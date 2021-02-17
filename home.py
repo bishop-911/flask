@@ -46,14 +46,14 @@ def data_display():
         cls = data['class']
         teacher = dict_name[int(cls)]
 
-        detail = {
+        details = {
             'name':name,
             'class':cls,
             'id':id,
             'teacher':teacher
         }
 
-        return render_template('data_display.html', data=detail)
+        return render_template('data_display.html', data=details)
 
 if __name__ == "__main__":
     app.run(debug=True)
